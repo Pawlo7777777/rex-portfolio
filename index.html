@@ -1665,8 +1665,10 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2024 · Your Name · BS Elementary Education · Holy Name University</p>
-  </footer>
+  <p>
+    © <span id="year"></span> · Rex Jesus Tinampay · BS Elementary Education
+  </p>
+</footer>
 
   <script>
     /* ═══════════════════════════════════════
@@ -1676,6 +1678,7 @@
     const EMAILJS_SERVICE_ID = 'service_8in8o3r';
     const EMAILJS_TEMPLATE_ID = 'template_g9km4v8';
     emailjs.init(EMAILJS_PUBLIC_KEY);
+    document.getElementById("year").textContent = new Date().getFullYear();
 
     /* ═══════════════════════════════════════
        MOBILE NAV
